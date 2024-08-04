@@ -25,7 +25,7 @@ var (
 )
 
 func main() {
-	var PORT = ":8080"
+	var PORT = ":" + os.Getenv("PORT")
 
 	// psqlInfo := fmt.Sprintf(`host=%s port=%d user=%s password=%s dbname=%s sslmode=disable`,
 	// 	host,
